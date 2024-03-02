@@ -4,6 +4,7 @@ compileSdk = "34"
 minSdk = "23"
 targetSdk = "33"
 compose-compiler = "1.4.6"
+ktlint = "0.40.0"
 
 accessibilityTestFramework = "4.1.0"
 activityCompose = "1.8.2"
@@ -11,19 +12,15 @@ androidGradlePlugin = "8.3.0"
 appcompat = "1.6.1"
 
 kotlin = "1.8.20"
-ktlint = "0.40.0"
 ktx = "1.12.0"
-
-constraintLayoutCompose = "1.0.1"
-constraintLayout = "2.1.4"
 
 lifecycle = "2.7.0"
 
-composeLatest = "1.6.2"
-composeBom = "2024.02.01"
-
 coroutines = "1.7.3"
 
+composeLatest = "1.6.2"
+composeBom = "2024.02.01"
+constraintLayoutCompose = "1.0.1"
 viewModelCompose = "2.7.0"
 
 material = "1.11.0"
