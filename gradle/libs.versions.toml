@@ -2,42 +2,45 @@
 # @keep
 compileSdk = "34"
 minSdk = "23"
-targetSdk = "33"
-compose-compiler = "1.4.6"
-ktlint = "0.40.0"
+targetSdk = "34"
+compose-compiler = "1.5.10"
+ktlint = "1.2.1"
 
-accessibilityTestFramework = "4.1.0"
-activityCompose = "1.8.2"
-androidGradlePlugin = "8.3.0"
-appcompat = "1.6.1"
+accessibilityTestFramework = "4.1.1"
+activityCompose = "1.9.0"
+androidGradlePlugin = "8.5.1"
+appcompat = "1.7.0"
 
-kotlin = "1.8.20"
-ktx = "1.12.0"
+kotlin = "1.9.22"
+ktx = "1.13.1"
 
-lifecycle = "2.7.0"
+lifecycle = "2.8.3"
+
+datastorePreferances = "1.1.1"
 
 coroutines = "1.7.3"
 
-composeLatest = "1.6.2"
-composeBom = "2024.02.01"
+composeLatest = "1.6.8"
+composeBom = "2024.06.00"
 constraintLayoutCompose = "1.0.1"
-viewModelCompose = "2.7.0"
+viewModelCompose = "2.8.3"
 
-material = "1.11.0"
-material3 = "1.2.0"
+material = "1.12.0"
+material3 = "1.2.1"
 
 hilt = "2.49"
 hiltNavigationCompose = "1.2.0"
 
-okhttpLogging = "4.11.0"
+okhttpLogging = "4.12.0"
 retrofit = "2.9.0"
+coil = "2.4.0"
 
 junit = "4.13.2"
-monitor = "1.6.1"
+monitor = "1.7.1"
 uiAutomator = "2.3.0"
 coreTesting = "2.2.0"
-espresso = "3.5.1"
-testExtJunit = "1.1.5"
+espresso = "3.6.1"
+testExtJunit = "1.2.1"
 
 
 [libraries]
@@ -69,6 +72,8 @@ androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-lived
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "viewModelCompose" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferances" }
+
 material = { module = "com.google.android.material:material", version.ref = "material" }
 material-icons = { module = "androidx.compose.material:material-icons-extended", version.ref = "composeLatest" }
 
@@ -84,6 +89,8 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 okhttp3-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttpLogging" }
 retrofit2 = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 
 junit = { module = "junit:junit", version.ref = "junit" }
 accessibility-test-framework = { module = "com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework", version.ref = "accessibilityTestFramework" }
