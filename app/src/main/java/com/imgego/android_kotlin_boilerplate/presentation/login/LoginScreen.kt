@@ -1,7 +1,15 @@
 package com.imgego.android_kotlin_boilerplate.presentation.login
 
+import android.content.res.Configuration
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.ElevatedCard
@@ -13,22 +21,14 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import coil.compose.AsyncImage
-import coil.request.ImageRequest
-import coil.size.Scale
-import com.imgego.android_kotlin_boilerplate.common.composableViews.MediumTitleText
+import com.imgego.android_kotlin_boilerplate.R
 import com.imgego.android_kotlin_boilerplate.common.composableViews.TitleText
 import com.imgego.android_kotlin_boilerplate.presentation.login.state.LoginUiEvent
 import com.imgego.android_kotlin_boilerplate.ui.theme.AndroidKotlinBoilerplateTheme
 import com.imgego.android_kotlin_boilerplate.ui.theme.AppTheme
-import com.imgego.android_kotlin_boilerplate.R
-
 
 
 @Composable
@@ -134,8 +134,18 @@ fun LoginScreen(
 
 }
 
-@Preview(showBackground = true)
+
 @Composable
+@Preview(
+    showBackground = true,
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+    name = "DefaultPreviewDark"
+)
+@Preview(
+    showBackground = true,
+    uiMode = Configuration.UI_MODE_NIGHT_NO,
+    name = "DefaultPreviewLight"
+)
 fun PreviewLoginScreen() {
     AndroidKotlinBoilerplateTheme {
         LoginScreen(

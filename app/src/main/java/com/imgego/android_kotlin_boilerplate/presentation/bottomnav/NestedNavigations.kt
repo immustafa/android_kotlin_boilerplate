@@ -69,7 +69,15 @@ fun NavGraphBuilder.authenticatedGraph(navController: NavController) {
     ) {
         // Profile
         composable(route = NavigationRoutes.Authenticated.Profile.route) {
-            ProfileScreen()
+            ProfileScreen(
+                onNavigateToUnAuthenticatedRoute = {
+                    navController.navigate(route = NavigationRoutes.Unauthenticated.NavigationRoute.route) {
+                        popUpTo(route = NavigationRoutes.Unauthenticated.NavigationRoute.route) {
+                            inclusive = true
+                        }
+                    }
+                }
+            )
         }
 
     }
